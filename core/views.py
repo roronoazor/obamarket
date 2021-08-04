@@ -7,6 +7,17 @@ def index(request):
         'is_prop': False,
         'is_cont': False,
         'is_about':False,
+        'carousels': [
+            ['assets/img/latest-1.jpeg', 'assets/img/latest-2.jpeg'],
+            ['assets/img/latest-3.jpeg', 'assets/img/latest-4.jpeg'],
+            ['assets/img/latest-5.jpeg', 'assets/img/latest-1.jpeg'],
+            ['assets/img/latest-1.jpeg', 'assets/img/latest-2.jpeg'],
+            ['assets/img/latest-3.jpeg', 'assets/img/latest-4.jpeg'],
+            ['assets/img/latest-5.jpeg', 'assets/img/latest-1.jpeg'],
+            ['assets/img/latest-1.jpeg', 'assets/img/latest-2.jpeg'],
+            ['assets/img/latest-3.jpeg', 'assets/img/latest-4.jpeg'],
+            ['assets/img/latest-5.jpeg', 'assets/img/latest-1.jpeg'],
+        ]
     }
     return render(request, 'core/index.html', context)
 
